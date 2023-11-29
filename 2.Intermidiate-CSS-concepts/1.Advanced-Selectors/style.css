@@ -1,0 +1,25 @@
+/*Advanced Selectors
+> - The Child Combinator
++ - The Adjacent Sibling Combinator
+~ - The General Sibling Combinator
+*/
+
+/* This rule will only select div within a div*/
+main > div > div{
+    /*CSS*/
+}
+
+/* Only selct child group 2 */
+.group1 + div{
+    /*CSS*/
+}
+
+/* Only selct child group 3 */
+.group1 + div + div{
+    /*CSS*/
+}
+
+/* Select all siblings of group 1*/
+.group1 ~ div{
+    /*CSS*/
+}
