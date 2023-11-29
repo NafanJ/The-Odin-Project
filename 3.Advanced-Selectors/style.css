@@ -83,3 +83,44 @@ a:visited{
   .emojify::after {
     content: '🤓 😎';
 }
+
+/* Attribute Selectors */
+/* An Attribute is anything in the opening tag of an HTML element 
+i.e src="" or href="" */
+
+[src]{
+    /* This will target any element that has a src attribute*/
+}
+
+img[src]{
+    /* This will only target img elements that had a src attribute */
+}
+
+img[src="puppy.jpg"]{
+    /* This will target img elements with a src attribute that is "puppy.jpg"*/
+}
+
+/* More general selecting using similar REGEX syntax */
+[class^='aus'] {
+    /* Classes are attributes too!
+      This will target any class that begins with 'aus':
+      class='austria'
+      class='australia'
+    */
+  }
+  
+  [src$='.jpg'] {
+    /* This will target any src attribute that ends in '.jpg':
+    src='puppy.jpg'
+    src='kitten.jpg'
+    */
+  }
+  
+  [for*='ill'] {
+    /* This will target any for attribute that has 'ill' anywhere inside it:
+    for="bill"
+    for="jill"
+    for="silly"
+    for="ill"
+    */
+  }
