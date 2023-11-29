@@ -1,0 +1,71 @@
+/*Advanced Selectors
+> - The Child Combinator
++ - The Adjacent Sibling Combinator
+~ - The General Sibling Combinator
+*/
+
+/* This rule will only select div within a div*/
+main > div > div{
+    /*CSS*/
+}
+
+/* Only selct child group 2 */
+.group1 + div{
+    /*CSS*/
+}
+
+/* Only selct child group 3 */
+.group1 + div + div{
+    /*CSS*/
+}
+
+/* Select all siblings of group 1*/
+.group1 ~ div{
+    /*CSS*/
+}
+
+
+/* Psuedo Classes 
+:focus - applies to an element that is currently selected 
+:hover - will affect anything under the mouse's pointer
+:active - applies to elements that currently being clicked
+*/
+
+/* Here is a link example, used by default in most browsers */
+
+a{
+    text-decoration: underline;
+}
+
+a:link{
+    color:blue
+}
+
+a:visited{
+    color: purple;
+}
+
+/* Structural Pseudo-Classes 
+:root represents the very top level of the document
+:root is where you will place global CSS rules
+
+:first-child and :last-child will match elemnt s that the first or last sibling
+:empty will match elements that have no children
+:only-child will match elements that have no siblings 
+*/
+
+.myList:nth-child(5){ /* Selects 5th element */
+
+}
+
+.myList:nth-child(3n){ /* Selects every 3rd element */
+
+}
+
+.myList:nth-child(3n + 3){ /* Selects every 3rd element, beginning with the 3rd */
+    
+}
+
+.myList:nth-child(even){ /* Selects every even element */
+    
+}
