@@ -67,5 +67,19 @@ a:visited{
 }
 
 .myList:nth-child(even){ /* Selects every even element */
-    
+
+/* Pseudo-elements 
+::marker - Allows you to customise the styling of your <li> element's bullets or numbers
+::first-letter and ::first-line allow you to give special styling to the first letter or line of some text
+::selection allows you to change the highlighting when a user selects text on the page
+::before and ::after allows us to add extra eleemnts onto the page with CSS, instead of HTML.
+*/
+}
+
+  .emojify::before {
+    content: '😎 🤓';
+}
+
+  .emojify::after {
+    content: '🤓 😎';
 }
