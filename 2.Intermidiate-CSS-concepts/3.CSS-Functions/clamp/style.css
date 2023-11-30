@@ -1,0 +1,11 @@
+/*
+clamp(smallest, ideal, largest)
+smallet - smallest acceptabale font is 320px
+ideal - ideal font size
+largest - largest acceptable font size
+*/
+
+
+h1 {
+    font-size: clamp(320px, 8vh, 6rem);
+  }
