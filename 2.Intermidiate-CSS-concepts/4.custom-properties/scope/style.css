@@ -1,0 +1,19 @@
+:root {
+    --main-color: green;
+}
+
+.cool-div {
+    --main-bg: red;
+}
+
+.cool-paragraph {
+    background-color: var(--main-bg);
+}
+
+.boring-paragraph {
+    background-color: var(--main-bg);
+}
+
+.exciting-paragraph {
+    background-color: var(--main-color);
+  }
