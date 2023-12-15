@@ -1,0 +1,36 @@
+.container{
+    display: grid;
+}
+
+.container-cr{
+    display: grid;
+    /*grid-template-columns: 50px 50px 50px;
+    grid-template-rows: 50px 50px;*/
+    grid-template: 50px 50px / 50px 50px; /* Shorthand rows/columns */
+    /*Columns and rows dont share same values, lets make first column 5* bigger */
+    grid-template: 50px 50px/ 250px 50px 50px;
+    /* Starting to get it above example equal to */
+    /* Row 1 Row 2/ Col 1 Col 2 Col 3 */
+}
+
+.container-ex{
+    display: grid;
+    grid-template: 50px 50px/ 50px 50px;
+    /* when we have overflow into undefined rows, the sizes are inheritied, istead we use grid-auto-rows*/
+    grid-auto-rows: 50px;
+    /* If you want overflow to go horizontally, use*/
+    grid-auto-flow: column;
+    grid-auto-columns: 50px ;
+}
+
+.container-gap{
+    display: grid;
+    grid-template: 50px 50px/ 50px 50px;
+    column-gap: 25px;
+    row-gap: 25px;
+    /* shorthand - gap: 25px;*/
+}
+
+.container-gap > div{
+    border: 1px solid blue;
+}
