@@ -1,7 +1,6 @@
 .container {
     display: grid;
-    grid-template-rows: 100px 100px 100px;
-    grid-template-columns: 100px 100px 100px;
+    grid-template: 100px 100px 100px / 100px 100px 100px;
   }
   
   .item {
@@ -17,3 +16,8 @@
   .last-column {
     background-color: lightblue; 
   }
+
+  /*
+  Div Containing C has class first-row and last-column
+  Last one declared is what is applied therefore last-column^ in this case.
+  */
