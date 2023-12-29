@@ -1,0 +1,44 @@
+.container{
+    display: inline-grid;
+    grid-template: 40px 40px 40px 40px 40px / 40px 40px 40px 40px 40px;
+    background-color: lightblue;
+}
+
+.room{
+    border: 1px solid;
+    font-size: 50%;
+    text-align: center;
+}
+
+#living-room{
+    grid-column-start: 1;
+    grid-column-end: 6;
+    grid-row-start: 1;
+    grid-row-end: 3;
+}
+
+#bathroom{
+    grid-row-start: 3;
+    grid-row-end: 6;
+}
+
+/*
+Shorthand for the same effect 
+grid-column is just a combination of grid-column-start and grid-column-end with a slash between the two values. 
+And grid-row is the shorthand version for setting an item’s row positioning.
+*/
+#bedroom{
+    grid-column: 2/4;
+    grid-row: 3/5;
+}
+
+#closet{
+    grid-column-start: 2;
+    grid-column-end: 4;
+}
+
+#kitchen{
+    grid-column: 4 / 6;
+    grid-row: 3 / 6;
+}
+
