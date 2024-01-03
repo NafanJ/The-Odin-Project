@@ -7,8 +7,19 @@
     padding: 4px;
     border: 1px solid grey;
     background-color: skyblue;
+
+    /*
     grid-template-rows: repeat(2, 1fr);
     grid-template-columns: repeat(2, 2fr) repeat(3, 1fr);
+    */
+
+    /* Static values, daft
+    grid-template-rows: repeat(2, min(100px, 200px, 300px, 400px, 500px));
+    grid-template-columns: repeat(5, max(100px, 200px, 300px, 400px, 500px));
+    */
+    /* Dynamic Values */
+    grid-template-rows: repeat(2, min(200px, 50%));
+    grid-template-columns: repeat(5, max(120px, 15%));
   }
   
   .grid-item {
