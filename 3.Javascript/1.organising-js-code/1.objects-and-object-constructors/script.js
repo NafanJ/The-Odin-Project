@@ -76,6 +76,7 @@ console.log(playerThree.name)
 playerThree.sayName() // Call object function 
 
 // Exercise
+console.log('Exercise:')
 function Book(title, author, pages, read){
     this.title = title;
     this.author = author;
@@ -88,3 +89,24 @@ function Book(title, author, pages, read){
 
 const book1 = new Book('The Hobbit', 'J.R.R. Tolkien', 295, 'not read')
 console.log(book1.info());
+
+// The Prototype
+// All objects in JS have a prototype, this is another object that the original object inherits form
+// therefore the original object has access to all of it's prototypes methods and properties
+
+// saves memory and allows for inheritance
+console.log('The Prototype:')
+// Accessing an object's prototype
+console.log(Object.getPrototypeOf(playerThree))
+console.log(Object.getPrototypeOf(playerThree) === Player.prototype); 
+
+// Declaring a function in the protype for all objects to use
+Player.prototype.sayHello = function(){
+    console.log("Hey, I'm " + this.name + "! This is a prototype function");
+};
+playerThree.sayHello();
+
+// Prototypal Inherritance
+console.log('Prototypal Inheritance:')
+console.log(Object.getPrototypeOf(Player.prototype) === Object.prototype);
+console.log(playerThree.valueOf());
