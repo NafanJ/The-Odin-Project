@@ -40,8 +40,14 @@ module.exports = {
   // Shows Original Source Code in browser
   devtool: 'inline-source-map',
   // Reloads server on source file change - run 'npx webpack'
-  devServer: {
+  /*devServer: {
     contentBase: './dist',
     hot: true
-  }
+  }*/
+  devServer: {
+    static: './dist',
+  },
+  optimization: {
+    runtimeChunk: 'single',
+  },
 };
