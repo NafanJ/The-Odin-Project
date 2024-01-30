@@ -1,0 +1,5 @@
+.hello {
+    display: grid;
+    justify-content: center;
+    color: red;
+  }
