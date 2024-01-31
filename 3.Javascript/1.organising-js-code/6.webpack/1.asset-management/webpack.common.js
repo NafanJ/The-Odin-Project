@@ -2,14 +2,12 @@ const path = require('path');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
 
 module.exports = {
-  mode: 'development',
   entry: {
-    index: './src/index.js',
-    print: './src/print.js',
+    app: './src/index.js',
   },
   plugins: [
     new HtmlWebpackPlugin({
-      title: 'Development',
+      title: 'Production',
     }),
   ],
   output: {
@@ -36,18 +34,5 @@ module.exports = {
         use: ['xml-loader'],
       },
     ],
-  },
-  // Shows Original Source Code in browser
-  devtool: 'inline-source-map',
-  // Reloads server on source file change - run 'npx webpack'
-  /*devServer: {
-    contentBase: './dist',
-    hot: true
-  }*/
-  devServer: {
-    static: './src',
-  },
-  optimization: {
-    runtimeChunk: 'single',
   },
 };
