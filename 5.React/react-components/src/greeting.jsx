@@ -1,5 +1,6 @@
 function Greeting(){
-    return <h1>&quot;I swear by my pretty floral bonnet, I will end you.&quot;</h1>;
+    return <div className="quote"> 
+    <h1>&quot;Hey, I'm testing a few react components.&quot;</h1> </div>;
 }
 
 
