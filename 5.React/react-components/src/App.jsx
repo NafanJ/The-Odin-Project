@@ -1,4 +1,5 @@
 import KitchenSinkExample from './kitchenSink';
+import 'bootstrap/dist/css/bootstrap.min.css';
 
 function App() {
   // Array of details for each card
@@ -15,14 +16,14 @@ function App() {
       title: 'Landscape Two',
       description: 'Description for Card 2',
       imageSrc: 'https://media.istockphoto.com/id/1296913338/photo/sonoran-sunset.jpg?s=612x612&w=0&k=20&c=lGXd-vnDmH_bCnR53BNmwxsh3qn8MBLQoh5M926QAbY=',
-      listItems: ['Item 4', 'Item 5', 'Item 6'],
+      listItems: ['Item 1', 'Item 2', 'Item 3'],      
     },
     {
       id: 3,
       title: 'Landscape Three',
       description: 'Description for Card 2',
       imageSrc: 'https://www.josephfiler.com/images/xl/Canada-Rockies-2101-Edit.jpg',
-      listItems: ['Item 4', 'Item 5', 'Item 6'],
+      listItems: ['Item 1', 'Item 2', 'Item 3'],            
     }
   ];
   return (
