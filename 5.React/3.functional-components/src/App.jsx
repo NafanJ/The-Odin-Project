@@ -1,6 +1,6 @@
 // Filename - App.js
 
-import React, { useState } from "react";
+import { useState } from "react";
 
 const Example = () => {
 	const [change, setChange] = useState(true);
