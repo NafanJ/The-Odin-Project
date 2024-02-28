@@ -3,6 +3,7 @@
 import React from "react";
 import ReactDOM from "react-dom";
 import Example from "./App";
+import Counter from "./Counter";
 
 const root = ReactDOM.createRoot(
 	document.getElementById("root")
@@ -10,5 +11,6 @@ const root = ReactDOM.createRoot(
 root.render(
 	<React.StrictMode>
 		<Example />
+		<Counter />
 	</React.StrictMode>
 );
