@@ -7,7 +7,7 @@ const Example = () => {
 	return (
 		<div>
 			<button onClick={() => setChange(!change)}>
-				Click Here!
+				Update Header!
 			</button>
 			{change ? (
 				<h1>Welcome to GeeksforGeeks</h1>
