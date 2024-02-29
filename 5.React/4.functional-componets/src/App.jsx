@@ -1,5 +1,3 @@
-import './App.css'
-
 function ListItem(props){
   return <li>{props.animal}</li>
 }
