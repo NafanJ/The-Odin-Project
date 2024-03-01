@@ -1,9 +1,18 @@
 function Item({ name, isPacked}){
-    if (isPacked){
+    
+  /*if (isPacked){
         return <li className="item">{name} ✔</li>
-    } return <li className="item">{name}</li>
+    } return <li className="item">{name}</li>*/
+
     // Return no element
     //} return null
+
+    // Ternary Expression
+    return (
+      <li className="item">
+        {isPacked ? name + ' ✔' : name}
+      </li>
+    );
 }
 
 export default function PackingList() {
