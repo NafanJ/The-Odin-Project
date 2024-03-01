@@ -1,9 +1,9 @@
-function ListItem(props){
+function ListItem(props) {
   return <li>{props.animal}</li>
 }
 
 
-function List(props){
+function List(props) {
   if (!props.animals) {
     return <div>Loading...</div>;
   }
@@ -15,7 +15,7 @@ function List(props){
   return (
     <ul>
       {props.animals.map((animal) => {
-        return <ListItem key={animal} animal={animal}/>;
+        return <ListItem key={animal} animal={animal} />;
         // Ternary Operator
         //  return animal.startsWith("L") ? <li key={animal}>{animal}</li> : null;
         // && Operator
@@ -33,21 +33,23 @@ function App() {
 
   return (
     <>
-      <h1>Rendering Techniques</h1>
+      <div>
+        <h2>Rendering Lists</h2>
 
-      <h2>Map Through an Array</h2>
-      <ul>
-        {animals.map((animal) => {
-          return <li key={animal}>{animal}</li>;
-        })}
-      </ul>
-      
-      <h2>Mapped to a variable</h2>
-      <ul>
-        {animalsList}
-      </ul>
-      <h2>Mapped through React Functions</h2>
-      <List animals={animals} />
+        <h3>Map through an Array</h3>
+        <ul>
+          {animals.map((animal) => {
+            return <li key={animal}>{animal}</li>;
+          })}
+        </ul>
+
+        <h3>Mapped to a Var</h3>
+        <ul>
+          {animalsList}
+        </ul>
+        <h3>Mapped through Prop & Function</h3>
+        <List animals={animals} />
+      </div>
     </>
   )
 }
