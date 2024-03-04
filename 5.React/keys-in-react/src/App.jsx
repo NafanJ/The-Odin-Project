@@ -1,5 +1,5 @@
 import { useState } from 'react'
-import {TodoList, MonthList} from './Keys'
+import {TodoList, MonthList, NameList} from './Keys'
 
 import './App.css'
 
@@ -11,6 +11,8 @@ function App() {
       <TodoList />
       <h1>Months</h1>
       <MonthList />
+      <h1>Names</h1>
+      <NameList/>
     </>
   )
 }
