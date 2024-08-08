@@ -15,7 +15,7 @@ body {
     background: pink;
     width: 200px;
     height: 200px;
-    transition: transform 3000ms cubic-bezier(0, 0.47, 0.32, 1.97);
+    transition: transform 1000ms cubic-bezier(0, 0.47, 0.32, 1.97);
   }
   
   .trigger:hover .box {
